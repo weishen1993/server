@@ -9,13 +9,13 @@
 
 using namespace std;
 
-template <typename TYPE, void (TYPE::*runInThread)() >
-void* _thread_t(void* param)//线程启动函数，声明为模板函数
-{
- TYPE* This = (TYPE*)param;
- This->runInThread();
- return NULL;
- }
+//template <typename TYPE, void (TYPE::*runInThread)() >
+//void* _thread_t(void* param)//线程启动函数，声明为模板函数
+//{
+// TYPE* This = (TYPE*)param;
+// This->runInThread();
+// return NULL;
+// }
 
 
 

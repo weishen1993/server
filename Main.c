@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
 						ntohs(cliaddr.sin_port));
 				for (j = 0; j < OPEN_MAX; j++) {
 					if (client[j] < 0) {
-						client[j] = connfd; /* save descriptor */
+						client[j] = connfd; 
 						break;
 					}
 				}
@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
 				if (j == OPEN_MAX)
 					perr_exit("too many clients");
 				if (j > maxi)
-					maxi = j; 		/* max index in client[] array */
+					maxi = j; 		
 
 				tep.events = EPOLLIN; 
 				tep.data.fd = connfd;
