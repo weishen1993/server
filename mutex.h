@@ -1,9 +1,10 @@
 //@Author weishen
 //mutex class
 
-#ifndef WEISHEN_BASE_MUTEX_H_
-#define WEISEHN_BASE_MUTEX_H_
+//#ifndef WEISHEN_BASE_MUTEX_H_
+//#define WEISEHN_BASE_MUTEX_H_
 
+#pragma once
 #include <cstdio>
 #include <pthread.h>
 #include "noncopyable.h"
@@ -35,4 +36,4 @@ private:
     MutexLock& mutex_;
 };
 
-#endif
+//#endif
