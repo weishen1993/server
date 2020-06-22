@@ -8,8 +8,8 @@ int main()
 {
     cout<<"hello"<<endl;
     {
-        MutexLock  mutex;
-        MutexLockGuard mymutex(mutex);
+        weishen::MutexLock  mutex;
+        weishen::MutexLockGuard mymutex(mutex);
     }
 
     cout<<"world"<<endl;

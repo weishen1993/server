@@ -15,4 +15,5 @@ protected:
     ~noncopyable() = default;
 };
 
+}
 #endif

@@ -4,6 +4,7 @@
 //#ifndef WEISHEN_BASE_MUTEX_H_
 //#define WEISEHN_BASE_MUTEX_H_
 
+namespace weishen{
 #pragma once
 #include <cstdio>
 #include <pthread.h>
@@ -36,4 +37,5 @@ private:
     MutexLock& mutex_;
 };
 
+}
 //#endif

@@ -3,6 +3,8 @@
 
 //#ifndef WEISHEN_BASE_CONDITION_H_
 //#define WEISHEN_BASE_CONDITION_H_
+
+namespace weishen{
 #pragma once
 #include <error.h>
 #include <pthread.h>
@@ -38,4 +40,5 @@ private:
     pthread_cond_t cond_;
 };
 
+}
 //#endif
